@@ -1,0 +1,14 @@
+.flexcontainer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+   
+}
+.box1{
+    /* position: relative; */
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    justify-content: center;
+    border: 2px solid red   ;
+}

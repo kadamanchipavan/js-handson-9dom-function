@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        p{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+   <h2 id="text">helloworld</h2>
+ <p> 1.  Write the code to access element which is having id as "text"</p>
+
+ <pre>
+    let a=document.getElementById("text")
+console.log(a);
+ </pre>
+<p> 2 .Write the code to access element which is having tag as "h1"</p>
+ <!-- 2Q -->
+ <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, repudiandae!</h1>
+<pre>
+    let b=document.getElementsByTagName("h1")
+ console.log(b);
+</pre>
+<p>3.Write the code to access element which is having class as "box"</p>
+<!-- 3Q -->
+<div class="box">
+    <b>hello india</b>
+
+</div>
+<pre>
+    let c=document.getElementsByClassName("box")
+    console.log(c); 
+</pre>
+
+
+<p>4. Change the heading from ""Hello"" to ""Hello World"" using DOM functions"</p>
+<!-- 4Q -->
+<div id="change">
+    hello
+</div>
+<pre>
+    let element= document.getElementById("change");
+ setTimeout(()=>{
+element.innerText="HELLO WORLD"
+ })
+</pre>
+<!-- 5Q -->
+<p>Create three cards on HTML page and arrange them using flex property in row or horizontal direction and also create button at the bottom named "Change Flex direction". When user clicks on this button, the cards arrangement should be changed to vertical direction.</p>
+<div class="flexcontainer">
+    <div class="box1">box1</div>
+    <div class="box1">box2</div>
+    <div class="box1">box3</div>
+   
+</div>
+<button id="dir">click here to change</button><br>
+//6Q
+<p>What's the difference between window vs document?</p>
+
+<p>document:the document object is a property of window object.the document object represented the html document loaded in that window
+    <br>window:the window object represents the browser window.the window object has many useful properties like the location object and the settimeout function
+</p>
+//7Q
+<!-- <p>"<h1>Hello </h1> -->
+    <p>Add one style attribute and give text color as red and id attribute and give the id value as ""heading"" in the above given h1 tag using DOM functions"</p>
+   
+        <h3>hello</h3>
+        
+<!-- 8Q -->
+<p>8.Create an HTML page having content as Hello world and a button named Replace Text. When user will click on this button page content should be changed to "Welcome to Elevation academy"</p>
+
+<b id="change1">helloworld</b><br>
+<button id="replace1" onclick="changetext()">click here to replace text</button>
+
+<!-- 9Q -->
+<P>9.Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep updating every second</P>
+<div>
+<h3>time</h3>
+<span id="hr">11:</span>
+<span id="Min">00:</span>
+<span id="sec">00</span>
+</div>
+
+<!-- 10q -->
+<p>10.Create a select drop down for selecting Year 20-21, 21-22 etc. Print the item text selected</p>
+<label for="years">years</label>
+<select name="years" id="years">
+    <option value="1">20-21</option>
+    <option value="2">21-22</option>
+</select>
+<div id="valuebox">
+<div ><button id="selbtn">get-value</button></div>
+<div id="selvalue"></div>
+</div>
+
+
+
+<script src="./main.js"></script>
+
+</body>
+</html>
